@@ -1,20 +1,20 @@
-# Portable File Organizer for Windows — Source-Available Personal Use License v1.0
+# Portable File Organizer — Source-Available Personal Use License v1.0
 
-Copyright © 2026 zaper3. All rights reserved except as expressly granted below.
+Copyright © 2026 **zaper3**. All rights reserved except as expressly granted below.
 
-> **Official source / Fuente oficial:** https://github.com/zaper3/Portable-File-Organizer-Windows
+**Official source / Fuente oficial:** `https://github.com/zaper3/Portable-File-Organizer`
+
+This license applies to the Windows, Linux, iOS/iPadOS and any future platform editions of **Portable File Organizer**, unless a specific file expressly states otherwise.
 
 ---
 
-# English
+## English
 
-## 1. Scope
+### 1. Nature of this license
 
-This license applies to the software, scripts, documentation and other original materials distributed as part of **Portable File Organizer for Windows** (the “Software”), unless a specific file states otherwise.
+This is a **source-available license**, not an OSI-approved open-source license. The source code may be publicly visible, but only the permissions expressly granted here are provided.
 
-This is a **source-available license**, not an open-source license as defined by the Open Source Initiative. The source code is publicly viewable, but only the permissions expressly granted below are provided.
-
-## 2. Permitted uses
+### 2. Permitted use
 
 You may, free of charge:
 
@@ -22,128 +22,76 @@ You may, free of charge:
 - inspect and study the source code;
 - make private modifications for your own permitted use;
 - make backup copies for your own permitted use; and
-- redistribute an **unaltered, complete copy of an official release** free of charge, provided that all copyright, license, attribution and official-source notices remain intact and the redistribution does not imply that you are the author, maintainer or official distributor of the Software.
+- redistribute an **unaltered and complete copy of an official release** free of charge, provided that all copyright, license, attribution and official-source notices remain intact.
 
-When redistributing an unmodified official release, you must provide a clear reference to the official repository:
+Any redistribution of an unmodified official release must clearly reference the official repository and must not imply that the redistributor is the author, maintainer or an official distributor.
 
-https://github.com/zaper3/Portable-File-Organizer-Windows
+### 3. Prior permission required
 
-## 3. Uses requiring prior written permission
+Prior written permission from the copyright holder is required to:
 
-Unless required otherwise by applicable law, you must obtain prior written permission from the copyright holder before you:
-
-- distribute modified versions, forks or derivative works outside your own private use;
-- publish a modified build or script for third parties;
+- publicly distribute modified versions, forks or derivative works;
+- publish modified builds, scripts or shortcuts for third parties;
 - sell, rent, sublicense, monetize, bundle for commercial consideration, or otherwise commercially exploit the Software;
-- incorporate the Software or substantial portions of it into a product or service offered for commercial consideration;
-- use the project name, branding, repository identity or other identifying elements in a way that may suggest that a modified or third-party version is official, endorsed or maintained by zaper3; or
-- relicense the Software under different terms.
+- incorporate the Software or a substantial part of it into a paid product or service;
+- relicense the Software under different terms; or
+- use the project name, branding, repository identity or other identifying elements in a way that could make a third-party or modified version appear official, endorsed or maintained by zaper3.
 
-## 4. Attribution and integrity
+### 4. Attribution and identity
 
-You may not remove, conceal or falsify copyright, authorship, license or official-source notices contained in the Software or its documentation.
+You may not remove, falsify or materially obscure copyright, authorship, license or official-source notices distributed with the Software.
 
-You may not represent yourself or another party as the original author or official maintainer of the Software.
+The names **Portable File Organizer**, **zaper3**, and the identity of the official repository may not be used to impersonate the official project or misrepresent the origin of a modified version.
 
-Modified versions must not be presented as official releases of **Portable File Organizer for Windows** without prior written permission.
+### 5. No warranty
 
-## 5. GitHub forks
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE COPYRIGHT HOLDER SHALL NOT BE LIABLE FOR DATA LOSS, BUSINESS INTERRUPTION, INDIRECT DAMAGES OR OTHER CLAIMS ARISING FROM USE OF THE SOFTWARE.
 
-Nothing in this license is intended to restrict rights that GitHub users receive directly under GitHub’s applicable Terms of Service for viewing and forking public repository content through GitHub’s own functionality. Any use beyond those platform-granted rights is governed by this license and applicable law.
+### 6. Third-party platforms
 
-## 6. No trademark license
-
-No trademark, trade name, logo, brand identity or other designation associated with the project is licensed except to the limited extent necessary to truthfully identify the original Software and its official source.
-
-## 7. No warranty
-
-THE SOFTWARE IS PROVIDED “AS IS” AND “AS AVAILABLE”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW.
-
-You are responsible for maintaining appropriate backups before using software that moves or reorganizes files.
-
-## 8. Limitation of liability
-
-TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE COPYRIGHT HOLDER SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR OTHER DAMAGES, INCLUDING LOSS OF DATA, PROFITS OR BUSINESS INTERRUPTION, ARISING FROM OR RELATED TO THE SOFTWARE OR ITS USE.
-
-## 9. Termination
-
-The permissions granted by this license terminate automatically if you materially violate its terms. Upon termination, you must cease any use or distribution that depended on permissions granted by this license.
-
-## 10. Additional permissions
-
-The copyright holder may grant additional permissions or commercial licenses in writing on a case-by-case basis.
+Use of GitHub, Apple Shortcuts, Windows, Linux distributions or other third-party platforms is also subject to those platforms' own terms and technical restrictions. This license does not override rights that applicable law or a platform's mandatory terms grant independently.
 
 ---
 
-# Español
+## Español
 
-## 1. Ámbito
+### 1. Naturaleza de esta licencia
 
-Esta licencia se aplica al software, scripts, documentación y demás materiales originales distribuidos como parte de **Portable File Organizer for Windows** (el «Software»), salvo que un archivo concreto indique expresamente otras condiciones.
+Esta es una licencia de **código visible / source-available**, no una licencia open source aprobada por la OSI. El código fuente puede ser públicamente visible, pero únicamente se conceden los permisos expresamente indicados aquí.
 
-Esta es una licencia de **código visible o source-available**, no una licencia de código abierto en el sentido definido por la Open Source Initiative. El código fuente puede consultarse públicamente, pero únicamente se conceden los permisos expresamente indicados a continuación.
-
-## 2. Usos permitidos
+### 2. Usos permitidos
 
 Puedes, de forma gratuita:
 
 - descargar y ejecutar el Software para uso personal, educativo e interno no comercial;
-- examinar y estudiar el código fuente;
+- inspeccionar y estudiar el código fuente;
 - realizar modificaciones privadas para tu propio uso permitido;
 - realizar copias de seguridad para tu propio uso permitido; y
-- redistribuir gratuitamente una **copia completa y sin modificar de una versión oficial**, siempre que se mantengan intactos todos los avisos de copyright, licencia, atribución y fuente oficial, y que dicha redistribución no sugiera que eres el autor, mantenedor o distribuidor oficial del Software.
+- redistribuir gratuitamente una **copia completa y sin modificar de una Release oficial**, siempre que se conserven íntegros los avisos de copyright, licencia, atribución y fuente oficial.
 
-Cuando redistribuyas una versión oficial sin modificar, debes incluir una referencia clara al repositorio oficial:
+Toda redistribución de una Release oficial sin modificar deberá identificar claramente el repositorio oficial y no podrá sugerir que quien la redistribuye es el autor, mantenedor o distribuidor oficial.
 
-https://github.com/zaper3/Portable-File-Organizer-Windows
+### 3. Usos que requieren autorización previa
 
-## 3. Usos que requieren autorización previa por escrito
+Se requiere autorización previa y por escrito del titular de los derechos para:
 
-Salvo que la legislación aplicable disponga lo contrario, necesitas autorización previa y por escrito del titular de los derechos antes de:
+- distribuir públicamente versiones modificadas, forks u obras derivadas;
+- publicar builds, scripts o atajos modificados para terceros;
+- vender, alquilar, sublicenciar, monetizar, incluir comercialmente en paquetes o explotar comercialmente el Software;
+- incorporar el Software o una parte sustancial del mismo en un producto o servicio de pago;
+- relicenciar el Software bajo condiciones diferentes; o
+- utilizar el nombre del proyecto, su identidad, repositorio u otros elementos identificativos de forma que una versión de terceros o modificada pueda parecer oficial, respaldada o mantenida por zaper3.
 
-- distribuir versiones modificadas, forks o trabajos derivados fuera de tu uso privado;
-- publicar para terceros una compilación o script modificado;
-- vender, alquilar, sublicenciar, monetizar, incluir a cambio de contraprestación comercial o explotar comercialmente de cualquier otra forma el Software;
-- incorporar el Software o partes sustanciales de este a un producto o servicio ofrecido a cambio de contraprestación comercial;
-- utilizar el nombre del proyecto, identidad, repositorio, branding u otros elementos identificativos de manera que pueda sugerir que una versión modificada o de terceros es oficial, está respaldada o es mantenida por zaper3; o
-- relicenciar el Software bajo condiciones diferentes.
+### 4. Autoría e identidad
 
-## 4. Atribución e integridad
+No se permite eliminar, falsificar u ocultar materialmente los avisos de copyright, autoría, licencia o fuente oficial distribuidos con el Software.
 
-No puedes eliminar, ocultar o falsear los avisos de copyright, autoría, licencia o fuente oficial incluidos en el Software o en su documentación.
+Los nombres **Portable File Organizer**, **zaper3** y la identidad del repositorio oficial no podrán utilizarse para suplantar el proyecto oficial ni para falsear el origen de una versión modificada.
 
-No puedes presentarte a ti mismo ni a terceros como autor original o mantenedor oficial del Software.
+### 5. Ausencia de garantía
 
-Las versiones modificadas no pueden presentarse como versiones oficiales de **Portable File Organizer for Windows** sin autorización previa por escrito.
+EL SOFTWARE SE PROPORCIONA “TAL CUAL”, SIN GARANTÍAS DE NINGÚN TIPO, EXPRESAS O IMPLÍCITAS. EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEGISLACIÓN APLICABLE, EL TITULAR DE LOS DERECHOS NO SERÁ RESPONSABLE POR PÉRDIDA DE DATOS, INTERRUPCIÓN DE ACTIVIDAD, DAÑOS INDIRECTOS U OTRAS RECLAMACIONES DERIVADAS DEL USO DEL SOFTWARE.
 
-## 5. Forks de GitHub
+### 6. Plataformas de terceros
 
-Nada de esta licencia pretende restringir los derechos que los usuarios de GitHub reciben directamente en virtud de los Términos de Servicio aplicables de GitHub para visualizar y hacer fork del contenido de repositorios públicos mediante la propia funcionalidad de GitHub. Cualquier uso que exceda esos derechos concedidos por la plataforma queda sujeto a esta licencia y a la legislación aplicable.
-
-## 6. Sin licencia de marca
-
-No se concede ninguna licencia sobre marcas, nombres comerciales, logotipos, identidad de marca u otras denominaciones asociadas al proyecto, salvo en la medida mínima necesaria para identificar verazmente el Software original y su fuente oficial.
-
-## 7. Ausencia de garantías
-
-EL SOFTWARE SE PROPORCIONA «TAL CUAL» Y «SEGÚN DISPONIBILIDAD», SIN GARANTÍAS DE NINGÚN TIPO, EXPRESAS O IMPLÍCITAS, INCLUIDAS, ENTRE OTRAS, LAS GARANTÍAS DE COMERCIABILIDAD, IDONEIDAD PARA UN FIN DETERMINADO, TITULARIDAD Y NO INFRACCIÓN, EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEGISLACIÓN APLICABLE.
-
-El usuario es responsable de mantener copias de seguridad adecuadas antes de utilizar software que mueva o reorganice archivos.
-
-## 8. Limitación de responsabilidad
-
-EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEGISLACIÓN APLICABLE, EL TITULAR DE LOS DERECHOS NO SERÁ RESPONSABLE DE DAÑOS DIRECTOS, INDIRECTOS, INCIDENTALES, ESPECIALES, CONSECUENTES O DE OTRA NATURALEZA, INCLUIDAS PÉRDIDAS DE DATOS, BENEFICIOS O INTERRUPCIONES DE NEGOCIO, DERIVADOS DEL SOFTWARE, RELACIONADOS CON ÉL O CON SU UTILIZACIÓN.
-
-## 9. Terminación
-
-Los permisos concedidos por esta licencia terminan automáticamente si incumples materialmente sus condiciones. Tras la terminación, deberás cesar cualquier uso o distribución que dependiera de los permisos concedidos por esta licencia.
-
-## 10. Permisos adicionales
-
-El titular de los derechos podrá conceder por escrito permisos adicionales o licencias comerciales de forma individual.
-
----
-
-## Legal note / Nota legal
-
-This custom license is intended to state the copyright holder’s permissions and restrictions clearly, but it is not a substitute for jurisdiction-specific legal advice. / Esta licencia personalizada pretende expresar de forma clara los permisos y restricciones del titular de los derechos, pero no sustituye asesoramiento jurídico adaptado a una jurisdicción concreta.
+El uso de GitHub, Apple Shortcuts, Windows, distribuciones Linux u otras plataformas de terceros también está sujeto a sus propias condiciones y restricciones técnicas. Esta licencia no sustituye derechos concedidos de forma independiente por la legislación aplicable o por condiciones obligatorias de dichas plataformas.
