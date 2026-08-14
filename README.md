@@ -1,5 +1,12 @@
 # Portable File Organizer for Windows
 
+[![Latest Release](https://img.shields.io/github/v/release/zaper3/Portable-File-Organizer-Windows?label=Latest%20Release)](https://github.com/zaper3/Portable-File-Organizer-Windows/releases/latest)
+![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-blue)
+![Offline](https://img.shields.io/badge/Mode-100%25%20Offline-brightgreen)
+![Source Available](https://img.shields.io/badge/License-Source--Available-orange)
+
+[![Download Latest Release](https://img.shields.io/badge/Download-Latest%20Release-success?style=for-the-badge)](https://github.com/zaper3/Portable-File-Organizer-Windows/releases/latest)
+
 **Portable, offline file organizer for Windows 10/11 with safe transactional Undo. No installation required.**
 
 **Organizador portátil y sin conexión para Windows 10/11 con función segura de deshacer mediante transacciones. No requiere instalación.**
