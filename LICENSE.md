@@ -2,7 +2,7 @@
 
 Copyright © 2026 **zaper3**. All rights reserved except as expressly granted below.
 
-**Official source / Fuente oficial:** `https://github.com/zaper3/Portable-File-Organizer-Windows`
+**Official source / Fuente oficial:** `https://github.com/zaper3/Portable-File-Organizer`
 
 This license applies to the Windows, Linux, iOS/iPadOS and any future platform editions of **Portable File Organizer**, unless a specific file expressly states otherwise.
 
