@@ -1,6 +1,6 @@
-# Security Policy / Política de seguridad
+# Security Policy / Política de Seguridad
 
-> **Official repository / Repositorio oficial:** https://github.com/zaper3/Portable-File-Organizer-Windows
+> Official source / Fuente oficial: `https://github.com/zaper3/Portable-File-Organizer`
 
 ---
 
@@ -8,36 +8,42 @@
 
 ### Scope
 
-Portable File Organizer for Windows is a local script that organizes files using `cmd.exe` and Windows PowerShell. It does not intentionally use remote services, user accounts, telemetry or cloud storage.
+Portable File Organizer is a local file-management utility with platform-specific editions.
 
-### Safe-use recommendations
+- **Windows:** `.bat` + Windows PowerShell.
+- **GNU/Linux:** Bash + standard local command-line utilities.
+- **iOS/iPadOS:** Apple Shortcuts design; final shared Shortcut requires Apple validation/export.
 
-- Download the script only from this official repository or its associated GitHub Releases.
-- When available, verify the SHA-256 checksum published with the official Release.
-- Test the tool first in a temporary folder before using it with important information.
-- Keep independent backups of critical data.
-- Do not delete the `_PortableFileOrganizer` folder while you want to preserve compatible Undo history.
-- Do not execute third-party modified copies without reviewing their changes.
+### Security model
 
-### Security-relevant behavior
+The stable Windows and Linux editions are designed to:
 
-The organizer is designed to:
+- operate locally without telemetry, accounts or remote APIs;
+- process only files located directly in the script's current folder during normal organization;
+- avoid recursive reorganization of existing subfolders;
+- avoid overwriting existing destination files;
+- ignore known temporary/incomplete download extensions;
+- record moves required for Undo;
+- delete during Undo only folders recorded as created by the organizer and only when those folders are empty.
 
-- avoid overwriting existing files;
-- ignore known temporary or incomplete downloads;
-- avoid traversing or reorganizing existing subfolders during normal organization;
-- record the movements required for Undo; and
-- remove during Undo only folders recorded as created by the organizer and only when those folders are empty.
+### Recommended use
+
+- Download official builds only from this repository's Releases.
+- Verify published SHA-256 checksums where available.
+- Test a new version in a temporary folder before using it with important data.
+- Maintain independent backups for critical data.
+- Do not remove `_PortableFileOrganizer` while you need compatible Undo history.
+- Review third-party modifications before executing them.
+
+### Platform-specific notes
+
+On Linux, the script checks for its required commands before running. Extremely minimal distributions may need Bash or standard utilities installed first.
+
+On iOS/iPadOS, file access is constrained by the permissions and locations available to Apple Shortcuts. Shared Shortcut files should be exported/validated using Apple's supported sharing flow; unsigned or manually fabricated Shortcut files are not treated as official builds.
 
 ### Reporting a vulnerability
 
-If you identify behavior that could cause data loss, unexpected overwriting, unintended command execution or another security issue, avoid posting sensitive data, private paths or personal information in a public issue.
-
-You may open a GitHub issue with a reproducible description and anonymized information to begin the analysis.
-
-### Official distribution
-
-The authoritative source of the project is this repository under the `zaper3` account. Third-party redistributed copies may have been modified and should not automatically be treated as equivalent to the official version published here.
+If you discover behavior that may cause data loss, unexpected overwrites, unsafe command execution, path handling problems or another security issue, avoid placing sensitive paths or personal information in a public report. Open a GitHub issue with a reproducible, anonymized description so the problem can be triaged.
 
 ---
 
@@ -45,33 +51,39 @@ The authoritative source of the project is this repository under the `zaper3` ac
 
 ### Alcance
 
-Portable File Organizer for Windows es un script local que organiza archivos mediante `cmd.exe` y Windows PowerShell. No utiliza intencionadamente servicios remotos, cuentas de usuario, telemetría ni almacenamiento en la nube.
+Portable File Organizer es una utilidad local de gestión de archivos con ediciones específicas por plataforma.
 
-### Recomendaciones de uso seguro
+- **Windows:** `.bat` + Windows PowerShell.
+- **GNU/Linux:** Bash + herramientas locales estándar de línea de comandos.
+- **iOS/iPadOS:** diseño Apple Atajos; el Shortcut compartido final requiere validación/exportación de Apple.
 
-- Descarga el script únicamente desde este repositorio oficial o desde sus GitHub Releases asociadas.
-- Cuando esté disponible, verifica el checksum SHA-256 publicado junto con la Release oficial.
-- Haz una prueba inicial en una carpeta temporal antes de utilizarlo con información importante.
-- Mantén copias de seguridad independientes para datos críticos.
-- No elimines la carpeta `_PortableFileOrganizer` mientras quieras conservar el historial compatible de Undo.
-- No ejecutes copias modificadas por terceros sin revisar previamente sus cambios.
+### Modelo de seguridad
 
-### Comportamiento de seguridad relevante
+Las ediciones estables de Windows y Linux están diseñadas para:
 
-El organizador está diseñado para:
+- funcionar localmente, sin telemetría, cuentas ni APIs remotas;
+- procesar durante la organización normal únicamente archivos situados directamente en la carpeta actual del script;
+- no reorganizar recursivamente subcarpetas existentes;
+- no sobrescribir archivos existentes en destino;
+- ignorar extensiones conocidas de descargas temporales/incompletas;
+- registrar los movimientos necesarios para Undo;
+- eliminar durante Undo únicamente carpetas registradas como creadas por el organizador y solo cuando estén vacías.
 
-- no sobrescribir archivos existentes;
-- ignorar descargas temporales o incompletas conocidas;
-- no recorrer ni reorganizar subcarpetas existentes durante la operación normal;
-- registrar los movimientos necesarios para Undo; y
-- eliminar durante Undo únicamente carpetas registradas como creadas por el propio organizador y solo cuando estén vacías.
+### Uso recomendado
+
+- Descarga builds oficiales únicamente desde Releases de este repositorio.
+- Verifica los checksums SHA-256 publicados cuando estén disponibles.
+- Prueba cada nueva versión en una carpeta temporal antes de utilizarla con información importante.
+- Mantén copias de seguridad independientes de los datos críticos.
+- No elimines `_PortableFileOrganizer` mientras necesites conservar un historial Undo compatible.
+- Revisa las modificaciones de terceros antes de ejecutarlas.
+
+### Notas específicas por plataforma
+
+En Linux, el script comprueba sus comandos necesarios antes de ejecutarse. Las distribuciones extremadamente mínimas pueden requerir instalar previamente Bash o utilidades estándar.
+
+En iOS/iPadOS, el acceso a archivos está limitado por los permisos y ubicaciones disponibles para Apple Atajos. Los archivos Shortcut compartidos deben exportarse/validarse mediante el flujo soportado por Apple; los archivos Shortcut sin firmar o fabricados manualmente no se consideran builds oficiales.
 
 ### Reporte de vulnerabilidades
 
-Si detectas un comportamiento que pueda provocar pérdida de datos, sobrescritura inesperada, ejecución de comandos no prevista u otro problema de seguridad, evita publicar datos sensibles, rutas privadas o información personal en un issue público.
-
-Puedes abrir un issue en GitHub con una descripción reproducible y datos anonimizados para iniciar el análisis.
-
-### Distribución oficial
-
-La fuente autoritativa del proyecto es este repositorio bajo la cuenta `zaper3`. Las copias redistribuidas por terceros pueden haber sido modificadas y no deben considerarse automáticamente equivalentes a la versión oficial publicada aquí.
+Si detectas un comportamiento que pueda provocar pérdida de datos, sobrescrituras inesperadas, ejecución insegura de comandos, problemas de tratamiento de rutas u otra vulnerabilidad, evita incluir rutas sensibles o información personal en un reporte público. Abre un issue de GitHub con una descripción reproducible y anonimizada para iniciar el análisis.
