@@ -1,8 +1,11 @@
-# Changelog / Historial de cambios
+# Changelog
 
-All notable public changes to this project will be documented here. / Todos los cambios públicos relevantes del proyecto se documentarán aquí.
+All notable public changes to **Portable File Organizer** are documented here.  
+Todos los cambios públicos relevantes de **Portable File Organizer** se documentan aquí.
 
-This project follows Semantic Versioning from the first public release. / Este proyecto sigue Versionado Semántico desde la primera publicación pública.
+The public version history starts at **v1.0.0** as a multiplatform project. Earlier numbers used during private/internal development are not public releases.
+
+El historial público comienza en **v1.0.0** como proyecto multiplataforma. Las numeraciones utilizadas durante el desarrollo privado/interno no constituyen Releases públicas.
 
 ---
 
@@ -10,40 +13,42 @@ This project follows Semantic Versioning from the first public release. / Este p
 
 ### English
 
-First public stable release.
-
 #### Added
-- English/Spanish language selector at startup.
-- Localized menus, confirmations, status messages and category folder names.
-- Main categorization by extension.
-- Optional categorization by format, date and smart filename rules.
-- Safe duplicate handling without overwriting existing files.
-- Ignore rules for temporary/incomplete downloads.
-- Transactional Undo for the latest compatible organization run.
-- Conservative cleanup of organizer-created empty folders during Undo.
-- Internal history stored in `_PortableFileOrganizer`.
-- Migration support for compatible internal-development Undo logs.
-- Offline operation with no telemetry.
+- First public multiplatform release.
+- Windows 10/11 portable `.bat` edition.
+- GNU/Linux portable Bash edition.
+- English/Spanish language selector.
+- Localized category folders.
+- Six organization modes: category, type, date, smart filename rules and combinations.
+- Collision-safe moves without overwriting existing files.
+- Exclusion of known temporary/incomplete downloads.
+- Transactional Undo for Windows and Linux.
+- Internal operation history in `_PortableFileOrganizer`.
+- iOS/iPadOS Apple Shortcuts distribution design and signing documentation.
+- Source-available bilingual license and security documentation.
+
+#### Security
+- Offline/local-only operation for Windows and Linux editions.
+- Undo removes only folders recorded as created by the organizer and only when empty.
+- SHA-256 checksums prepared for Release assets.
 
 ### Español
 
-Primera versión pública estable.
-
 #### Añadido
-- Selector inicial de idioma inglés/español.
-- Menús, confirmaciones, mensajes de estado y carpetas de categorías localizados.
-- Categorización principal por extensión.
-- Categorización opcional por formato, fecha y reglas inteligentes por nombre.
-- Gestión segura de duplicados sin sobrescribir archivos existentes.
-- Exclusión de descargas temporales/incompletas.
-- Deshacer transaccional de la última organización compatible.
-- Limpieza conservadora de carpetas vacías creadas por el organizador durante el Undo.
-- Historial interno almacenado en `_PortableFileOrganizer`.
-- Compatibilidad de migración con registros de Undo de versiones internas compatibles.
-- Funcionamiento offline y sin telemetría.
+- Primera Release pública multiplataforma.
+- Edición portable `.bat` para Windows 10/11.
+- Edición portable Bash para GNU/Linux.
+- Selector de idioma inglés/español.
+- Carpetas de categorías localizadas.
+- Seis modos de organización: categoría, tipo, fecha, reglas inteligentes por nombre y combinaciones.
+- Movimientos seguros ante colisiones, sin sobrescribir archivos existentes.
+- Exclusión de descargas temporales/incompletas conocidas.
+- Undo transaccional para Windows y Linux.
+- Historial interno en `_PortableFileOrganizer`.
+- Diseño de distribución y documentación de firma para la edición Apple Shortcuts de iOS/iPadOS.
+- Licencia source-available bilingüe y documentación de seguridad.
 
----
-
-> Earlier version numbers were used only during private/internal development and were never public Releases. Public version history starts at **v1.0.0**.
->
-> Las numeraciones anteriores se utilizaron únicamente durante el desarrollo privado/interno y nunca fueron Releases públicas. El historial público comienza en **v1.0.0**.
+#### Seguridad
+- Funcionamiento local/offline para las ediciones Windows y Linux.
+- Undo elimina únicamente carpetas registradas como creadas por el organizador y solo si están vacías.
+- Checksums SHA-256 preparados para los assets de la Release.
