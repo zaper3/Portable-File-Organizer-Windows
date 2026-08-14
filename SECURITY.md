@@ -16,7 +16,7 @@ Portable File Organizer for Windows is a local script that organizes files using
 - When available, verify the SHA-256 checksum published with the official Release.
 - Test the tool first in a temporary folder before using it with important information.
 - Keep independent backups of critical data.
-- Do not delete the `_Organizador` folder while you want to preserve compatible Undo history.
+- Do not delete the `_PortableFileOrganizer` folder while you want to preserve compatible Undo history.
 - Do not execute third-party modified copies without reviewing their changes.
 
 ### Security-relevant behavior
@@ -53,7 +53,7 @@ Portable File Organizer for Windows es un script local que organiza archivos med
 - Cuando esté disponible, verifica el checksum SHA-256 publicado junto con la Release oficial.
 - Haz una prueba inicial en una carpeta temporal antes de utilizarlo con información importante.
 - Mantén copias de seguridad independientes para datos críticos.
-- No elimines la carpeta `_Organizador` mientras quieras conservar el historial compatible de Undo.
+- No elimines la carpeta `_PortableFileOrganizer` mientras quieras conservar el historial compatible de Undo.
 - No ejecutes copias modificadas por terceros sin revisar previamente sus cambios.
 
 ### Comportamiento de seguridad relevante
