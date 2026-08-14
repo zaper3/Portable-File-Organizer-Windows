@@ -1,6 +1,6 @@
 # Portable File Organizer
 
-[![Latest Release](https://img.shields.io/github/v/release/zaper3/Portable-File-Organizer?label=release)](https://github.com/zaper3/Portable-File-Organizer/releases/latest)
+[![Release](https://img.shields.io/badge/release-v1.0.0-blue)](../../releases/latest)
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-informational)
 ![Linux](https://img.shields.io/badge/Linux-Bash%204%2B-informational)
 ![Offline](https://img.shields.io/badge/operation-100%25%20offline-success)
@@ -10,9 +10,9 @@
 
 **Organizador portátil y sin conexión con interfaces en inglés/español, protección frente a duplicados y función transaccional de deshacer.**
 
-> **Official repository / Repositorio oficial:** `https://github.com/zaper3/Portable-File-Organizer`
+> **Official source / Fuente oficial:** this GitHub repository / este repositorio de GitHub.
 
-[**Download latest release / Descargar última versión**](https://github.com/zaper3/Portable-File-Organizer/releases/latest)
+[**Download latest release / Descargar última versión**](../../releases/latest)
 
 ---
 
