@@ -33,21 +33,20 @@ Primera Release pública multiplataforma.
 - Internal transaction history stored in `_PortableFileOrganizer`.
 - 100% local/offline operation; no telemetry.
 
-### iOS / iPadOS
+### iOS / iPadOS preview
 
-An Apple Shortcuts edition is documented in `ios/README.md`. The final public `.shortcut` asset requires export/validation through Apple Shortcuts before it can be distributed as an official working Shortcut. The repository does not pretend that an unsigned generated file is a valid Apple build.
+An Apple Shortcuts edition is documented in `ios/README.md`. This Release includes an iOS/iPadOS preview/setup guide, **not a fake unsigned `.shortcut`**. Apple requires the final public Shortcut to be exported/validated through its supported sharing flow before it is presented as an official working Shortcut.
 
-### Assets
-
-Expected stable Release assets:
+### Release assets
 
 ```text
 Portable-File-Organizer-Windows-v1.0.0.zip
 Portable-File-Organizer-Linux-v1.0.0.tar.gz
+Portable-File-Organizer-iOS-v1.0.0-preview.zip
 SHA256SUMS.txt
 ```
 
-The iOS Shortcut can be added to this same Release after Apple validation/export:
+After Apple validation/export, the following asset can be added to this same Release:
 
 ```text
 Portable-File-Organizer-iOS-v1.0.0.shortcut
@@ -81,21 +80,20 @@ Portable-File-Organizer-iOS-v1.0.0.shortcut
 - Historial transaccional interno en `_PortableFileOrganizer`.
 - Funcionamiento 100 % local/offline; sin telemetría.
 
-### iOS / iPadOS
+### Preview iOS / iPadOS
 
-La edición Apple Shortcuts está documentada en `ios/README.md`. El `.shortcut` público final requiere exportación/validación mediante Apple Atajos antes de poder distribuirse como un Atajo oficial funcional. El repositorio no presenta un archivo generado sin firma como si fuera una build válida de Apple.
+La edición Apple Atajos está documentada en `ios/README.md`. Esta Release incluye una guía preview/configuración para iOS/iPadOS, **no un `.shortcut` falso sin firmar**. Apple requiere que el Shortcut público final se exporte/valide mediante su flujo soportado de compartición antes de presentarlo como un Atajo oficial funcional.
 
-### Assets
-
-Assets estables previstos para la Release:
+### Assets de la Release
 
 ```text
 Portable-File-Organizer-Windows-v1.0.0.zip
 Portable-File-Organizer-Linux-v1.0.0.tar.gz
+Portable-File-Organizer-iOS-v1.0.0-preview.zip
 SHA256SUMS.txt
 ```
 
-El Shortcut de iOS podrá añadirse a esta misma Release después de su validación/exportación por Apple:
+Después de la validación/exportación de Apple podrá añadirse a esta misma Release:
 
 ```text
 Portable-File-Organizer-iOS-v1.0.0.shortcut
