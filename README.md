@@ -1,53 +1,72 @@
-# Portable File Organizer for Windows
+# Portable File Organizer
 
-[![Latest Release](https://img.shields.io/github/v/release/zaper3/Portable-File-Organizer-Windows?label=Latest%20Release)](https://github.com/zaper3/Portable-File-Organizer-Windows/releases/latest)
-![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-blue)
-![Offline](https://img.shields.io/badge/Mode-100%25%20Offline-brightgreen)
-![Source Available](https://img.shields.io/badge/License-Source--Available-orange)
+[![Latest Release](https://img.shields.io/github/v/release/zaper3/Portable-File-Organizer?label=release)](https://github.com/zaper3/Portable-File-Organizer/releases/latest)
+![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-informational)
+![Linux](https://img.shields.io/badge/Linux-Bash%204%2B-informational)
+![Offline](https://img.shields.io/badge/operation-100%25%20offline-success)
+![License](https://img.shields.io/badge/license-source--available-orange)
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Latest%20Release-success?style=for-the-badge)](https://github.com/zaper3/Portable-File-Organizer-Windows/releases/latest)
+**Portable, offline file organizer with bilingual English/Spanish interfaces, safe duplicate handling and transactional Undo.**
 
-**Portable, offline file organizer for Windows 10/11 with safe transactional Undo. No installation required.**
+**Organizador portátil y sin conexión con interfaces en inglés/español, protección frente a duplicados y función transaccional de deshacer.**
 
-**Organizador portátil y sin conexión para Windows 10/11 con función segura de deshacer mediante transacciones. No requiere instalación.**
+> **Official repository / Repositorio oficial:** `https://github.com/zaper3/Portable-File-Organizer`
 
-> **Official repository / Repositorio oficial:** https://github.com/zaper3/Portable-File-Organizer-Windows  
-> **Latest release / Última versión:** https://github.com/zaper3/Portable-File-Organizer-Windows/releases/latest
+[**Download latest release / Descargar última versión**](https://github.com/zaper3/Portable-File-Organizer/releases/latest)
 
 ---
 
-## English
+## Platform status / Estado por plataforma
 
-### Overview
+| Platform / Plataforma | Edition / Edición | Status / Estado | Undo | Language / Idioma |
+|---|---|---|---|---|
+| Windows 10/11 | `.bat` | Stable / Estable | ✅ | EN / ES |
+| GNU/Linux | Bash `.sh` | Stable / Estable | ✅ | EN / ES |
+| iOS / iPadOS | Apple Shortcuts | Preview / Preparada para Shortcut | Design target / Objetivo de diseño | EN / ES |
 
-Portable File Organizer for Windows is a single-file `.bat` utility. Copy it into any folder, run it, choose **English** or **Español**, and organize the files contained directly in that folder.
+The iOS/iPadOS edition uses Apple Shortcuts because iOS does not execute arbitrary `.bat`/`.sh` files like desktop operating systems. Apple validates shared shortcut files when they are exported for other users, so the final distributable `.shortcut` must be exported/signed from Shortcuts on an Apple device. See [`ios/README.md`](ios/README.md).
 
-### Features
+La edición para iOS/iPadOS utiliza Apple Shortcuts porque iOS no ejecuta archivos `.bat`/`.sh` arbitrarios como un sistema operativo de escritorio. Apple valida los atajos compartidos al exportarlos para otros usuarios, por lo que el `.shortcut` distribuible final debe exportarse/firmarse desde Atajos en un dispositivo Apple. Consulta [`ios/README.md`](ios/README.md).
 
-- English and Spanish user interface.
-- Categories are also created in the selected language.
-- Main-category organization by file extension.
-- Optional subcategorization by format, date, smart filename rules, or combinations of them.
-- Existing files are never overwritten.
-- Temporary/incomplete downloads (`.crdownload`, `.part`, `.partial`, `.tmp`) are ignored.
-- Existing subfolders are not traversed during normal organization.
-- Transactional Undo for the latest compatible organization run.
-- Undo deletes only folders created by the organizer and only when empty.
-- Internal history is stored in `_PortableFileOrganizer`.
-- 100% local/offline; no telemetry or file-name uploads.
+---
 
-### Quick start
+# English
 
-1. Download the latest Release.
-2. Extract `Organizar_Archivos_Portable.bat`.
-3. Copy it into the folder you want to organize.
-4. Double-click the script.
-5. Choose `1 - English` or `2 - Español`.
-6. Select `1 - Organize files`.
-7. Type `YES` to confirm.
-8. Choose a mode from `0` to `5`, or press `ENTER` for mode `0`.
+## What it does
 
-### Organization modes
+Portable File Organizer sorts the files located directly in the same folder as the script. It does **not** recursively reorganize existing subfolders during a normal run.
+
+Core features:
+
+- English or Spanish selected at startup.
+- Category folders created in the selected language.
+- Main classification by file extension.
+- Optional subcategorization by type/format, date, filename rules, or combinations.
+- Existing files are never overwritten; collisions receive a safe alternative name.
+- Known temporary/incomplete downloads are ignored.
+- Transactional Undo for the latest compatible organization run on Windows and Linux.
+- Undo only removes folders that were created by the organizer and are still empty.
+- Internal history stored in `_PortableFileOrganizer`.
+- No telemetry, accounts, cloud processing or network access.
+
+## Windows
+
+Download the Windows ZIP from Releases, extract the `.bat`, copy it into the folder you want to organize, then double-click it.
+
+Repository source: [`Organizar_Archivos_Portable.bat`](Organizar_Archivos_Portable.bat)
+
+## Linux
+
+Download the Linux package from Releases or use [`linux/portable-file-organizer.sh`](linux/portable-file-organizer.sh).
+
+```bash
+chmod +x portable-file-organizer.sh
+./portable-file-organizer.sh
+```
+
+The Linux edition targets mainstream GNU/Linux distributions with **Bash 4+** and standard command-line tools such as `base64`, `awk`, `date`, `mv`, `mkdir`, `rmdir` and `tr`. Very minimal distributions that do not ship Bash or GNU-style userland by default may require installing the missing tools first.
+
+## Organization modes
 
 | Mode | Result |
 |---|---|
@@ -58,58 +77,53 @@ Portable File Organizer for Windows is a single-file `.bat` utility. Copy it int
 | `4` | Category + smart filename rules |
 | `5` | Category + type + date + smart rules |
 
-### Undo
+## Safety
 
-Select `2 - Undo last organization` from the main menu and type `UNDO` to confirm. The script restores files to their original locations without overwriting existing files.
+Before using any file-moving utility with critical data, test it in a temporary folder and maintain independent backups. Check [`SECURITY.md`](SECURITY.md) for the project security model.
 
-### Official distribution
+## License
 
-Use only Releases published from this repository as official builds. Verify the SHA-256 checksum when provided.
-
-### License
-
-This project is **source-available**, not OSI open source. Free personal, educational and internal non-commercial use is permitted. Public redistribution of modified versions and commercial exploitation require prior written permission. See [LICENSE.md](LICENSE.md).
-
-### Version
-
-Current public version: **v1.0.0**.
-
-Public Semantic Versioning starts at `1.0.0`. Earlier numbers used during private/internal development are not public releases.
+This project is **source-available**, not OSI open source. Personal, educational and internal non-commercial use is permitted under the conditions in [`LICENSE.md`](LICENSE.md). Public distribution of modified versions and commercial exploitation require prior written permission.
 
 ---
 
-## Español
+# Español
 
-### Descripción
+## Qué hace
 
-Portable File Organizer for Windows es una utilidad contenida en un único archivo `.bat`. Cópialo dentro de cualquier carpeta, ejecútalo, elige **English** o **Español** y organiza los archivos situados directamente en esa carpeta.
+Portable File Organizer clasifica los archivos situados directamente en la misma carpeta que el script. Durante una ejecución normal **no** reorganiza recursivamente las subcarpetas existentes.
 
-### Características
+Funciones principales:
 
-- Interfaz en inglés y español.
-- Las carpetas de categorías también se crean en el idioma seleccionado.
-- Organización por categorías principales según extensión.
-- Subclasificación opcional por formato, fecha, reglas inteligentes por nombre o combinaciones de ellas.
-- Nunca sobrescribe archivos existentes.
-- Ignora descargas temporales/incompletas (`.crdownload`, `.part`, `.partial`, `.tmp`).
-- No recorre subcarpetas existentes durante la organización normal.
-- Deshacer transaccional de la última organización compatible.
-- Al deshacer, solo elimina carpetas creadas por el organizador y únicamente si están vacías.
-- El historial interno se guarda en `_PortableFileOrganizer`.
-- Funcionamiento 100 % local/offline; sin telemetría ni envío de nombres de archivo.
+- Selección de inglés o español al iniciar.
+- Carpetas de categorías en el idioma seleccionado.
+- Clasificación principal por extensión.
+- Subclasificación opcional por tipo/formato, fecha, reglas por nombre o combinaciones.
+- Nunca sobrescribe archivos existentes; ante una colisión genera un nombre alternativo seguro.
+- Ignora descargas temporales/incompletas conocidas.
+- Undo transaccional de la última organización compatible en Windows y Linux.
+- Al deshacer solo elimina carpetas creadas por el organizador que continúen vacías.
+- Historial interno almacenado en `_PortableFileOrganizer`.
+- Sin telemetría, cuentas, procesamiento cloud ni acceso a Internet.
 
-### Uso rápido
+## Windows
 
-1. Descarga la última Release.
-2. Extrae `Organizar_Archivos_Portable.bat`.
-3. Cópialo dentro de la carpeta que quieras organizar.
-4. Haz doble clic.
-5. Elige `1 - English` o `2 - Español`.
-6. Selecciona `1 - Organizar archivos`.
-7. Escribe `SI` para confirmar.
-8. Elige un modo de `0` a `5` o pulsa `ENTER` para usar el modo `0`.
+Descarga el ZIP de Windows desde Releases, extrae el `.bat`, cópialo en la carpeta que quieras organizar y haz doble clic.
 
-### Modos de organización
+Código fuente en el repositorio: [`Organizar_Archivos_Portable.bat`](Organizar_Archivos_Portable.bat)
+
+## Linux
+
+Descarga el paquete Linux desde Releases o utiliza [`linux/portable-file-organizer.sh`](linux/portable-file-organizer.sh).
+
+```bash
+chmod +x portable-file-organizer.sh
+./portable-file-organizer.sh
+```
+
+La edición Linux está orientada a distribuciones GNU/Linux de uso general con **Bash 4+** y herramientas estándar como `base64`, `awk`, `date`, `mv`, `mkdir`, `rmdir` y `tr`. Las distribuciones extremadamente mínimas que no incluyan Bash o un userland compatible de fábrica pueden requerir instalar previamente las herramientas que falten.
+
+## Modos de organización
 
 | Modo | Resultado |
 |---|---|
@@ -120,27 +134,21 @@ Portable File Organizer for Windows es una utilidad contenida en un único archi
 | `4` | Categoría + reglas inteligentes por nombre |
 | `5` | Categoría + tipo + fecha + reglas inteligentes |
 
-### Deshacer
+## Seguridad
 
-Selecciona `2 - Deshacer última organización` en el menú principal y escribe `DESHACER` para confirmar. El script restaura los archivos a sus ubicaciones originales sin sobrescribir archivos existentes.
+Antes de utilizar cualquier herramienta que mueva archivos sobre información crítica, pruébala primero en una carpeta temporal y conserva copias de seguridad independientes. Consulta [`SECURITY.md`](SECURITY.md) para conocer el modelo de seguridad del proyecto.
 
-### Distribución oficial
+## Licencia
 
-Considera oficiales únicamente las Releases publicadas desde este repositorio. Verifica el checksum SHA-256 cuando esté disponible.
-
-### Licencia
-
-Este proyecto es **source-available / código visible**, no open source bajo una licencia OSI. Se permite uso personal, educativo e interno no comercial gratuito. La redistribución pública de versiones modificadas y la explotación comercial requieren autorización previa por escrito. Consulta [LICENSE.md](LICENSE.md).
-
-### Versión
-
-Versión pública actual: **v1.0.0**.
-
-El versionado semántico público comienza en `1.0.0`. Las numeraciones utilizadas durante el desarrollo privado/interno no constituyen Releases públicas.
+Este proyecto es **source-available / código visible**, no open source bajo una licencia OSI. Se permite el uso personal, educativo e interno no comercial bajo las condiciones de [`LICENSE.md`](LICENSE.md). La distribución pública de versiones modificadas y la explotación comercial requieren autorización previa por escrito.
 
 ---
 
+## Versioning / Versionado
+
+The public project starts at **v1.0.0** as a multiplatform release. Semantic Versioning is used for subsequent public versions.
+
+El proyecto público comienza en **v1.0.0** como Release multiplataforma. Las versiones públicas posteriores seguirán Versionado Semántico.
+
 Developed and maintained by / Desarrollado y mantenido por **zaper3**.  
 Copyright © 2026 zaper3.
-
-See / Consulta [CHANGELOG.md](CHANGELOG.md), [SECURITY.md](SECURITY.md) and / y [LICENSE.md](LICENSE.md).
