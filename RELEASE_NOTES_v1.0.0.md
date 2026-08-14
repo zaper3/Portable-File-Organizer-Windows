@@ -1,6 +1,6 @@
 # Portable File Organizer v1.0.0
 
-> **Official repository / Repositorio oficial:** `https://github.com/zaper3/Portable-File-Organizer-Windows`
+> **Official repository / Repositorio oficial:** `https://github.com/zaper3/Portable-File-Organizer`
 
 First public multiplatform release.  
 Primera Release pública multiplataforma.
