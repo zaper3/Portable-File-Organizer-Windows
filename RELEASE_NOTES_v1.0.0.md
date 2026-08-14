@@ -1,63 +1,107 @@
-# Portable File Organizer for Windows v1.0.0
+# Portable File Organizer v1.0.0
 
-> **Official repository / Repositorio oficial:** https://github.com/zaper3/Portable-File-Organizer-Windows
+> **Official repository / Repositorio oficial:** `https://github.com/zaper3/Portable-File-Organizer`
+
+First public multiplatform release.  
+Primera Release pública multiplataforma.
+
+---
 
 ## English
 
-First public stable release of Portable File Organizer for Windows.
+### Stable editions
 
-### Highlights
-- Single portable `.bat` file; no installation required.
-- English and Spanish interface selectable at startup.
-- Category folders are created in the selected language.
+**Windows 10/11**
+- Single portable `.bat` file.
+- No installation required.
+- English / Español selector.
+- Transactional Undo.
+
+**GNU/Linux**
+- Single portable Bash `.sh` file.
+- Targets mainstream distributions with Bash 4+ and standard GNU/Linux command-line tools.
+- English / Español selector.
+- Transactional Undo.
+
+### Common features
+
 - Main categorization by file extension.
-- Optional organization by file type, date and smart filename rules.
+- Optional organization by type/format, date and smart filename rules.
 - Existing files are never overwritten.
-- Temporary/incomplete downloads are ignored.
-- Transactional Undo for the latest compatible organization run.
-- Undo removes only empty folders created by the organizer.
-- Internal history is kept inside `_PortableFileOrganizer`.
-- 100% local/offline operation with no telemetry.
+- Known temporary/incomplete downloads are ignored.
+- Existing subfolders are not recursively reorganized.
+- Internal transaction history stored in `_PortableFileOrganizer`.
+- 100% local/offline operation; no telemetry.
 
-### Quick start
-1. Download and extract the Release ZIP.
-2. Copy `Organizar_Archivos_Portable.bat` into the folder you want to organize.
-3. Run it and choose `English` or `Español`.
-4. Choose `Organize files` / `Organizar archivos`.
+### iOS / iPadOS
 
-### Integrity
-Verify the SHA-256 file published with this Release if you want to confirm package integrity.
+An Apple Shortcuts edition is documented in `ios/README.md`. The final public `.shortcut` asset requires export/validation through Apple Shortcuts before it can be distributed as an official working Shortcut. The repository does not pretend that an unsigned generated file is a valid Apple build.
+
+### Assets
+
+Expected stable Release assets:
+
+```text
+Portable-File-Organizer-Windows-v1.0.0.zip
+Portable-File-Organizer-Linux-v1.0.0.tar.gz
+SHA256SUMS.txt
+```
+
+The iOS Shortcut can be added to this same Release after Apple validation/export:
+
+```text
+Portable-File-Organizer-iOS-v1.0.0.shortcut
+```
 
 ---
 
 ## Español
 
-Primera versión pública estable de Portable File Organizer for Windows.
+### Ediciones estables
 
-### Destacados
-- Un único archivo `.bat` portable; no requiere instalación.
-- Interfaz seleccionable en inglés y español al iniciar.
-- Las carpetas de categorías se crean en el idioma seleccionado.
+**Windows 10/11**
+- Un único archivo `.bat` portable.
+- No requiere instalación.
+- Selector English / Español.
+- Undo transaccional.
+
+**GNU/Linux**
+- Un único archivo Bash `.sh` portable.
+- Orientado a distribuciones de uso general con Bash 4+ y herramientas estándar de línea de comandos GNU/Linux.
+- Selector English / Español.
+- Undo transaccional.
+
+### Funciones comunes
+
 - Categorización principal por extensión.
-- Organización opcional por tipo de archivo, fecha y reglas inteligentes por nombre.
+- Organización opcional por tipo/formato, fecha y reglas inteligentes por nombre.
 - Nunca sobrescribe archivos existentes.
-- Ignora descargas temporales/incompletas.
-- Deshacer transaccional de la última organización compatible.
-- Al deshacer, solo elimina carpetas vacías creadas por el organizador.
-- El historial interno se conserva dentro de `_PortableFileOrganizer`.
-- Funcionamiento 100 % local/offline y sin telemetría.
+- Ignora descargas temporales/incompletas conocidas.
+- No reorganiza recursivamente las subcarpetas existentes.
+- Historial transaccional interno en `_PortableFileOrganizer`.
+- Funcionamiento 100 % local/offline; sin telemetría.
 
-### Uso rápido
-1. Descarga y extrae el ZIP de la Release.
-2. Copia `Organizar_Archivos_Portable.bat` dentro de la carpeta que quieras organizar.
-3. Ejecútalo y elige `English` o `Español`.
-4. Selecciona `Organize files` / `Organizar archivos`.
+### iOS / iPadOS
 
-### Integridad
-Verifica el archivo SHA-256 publicado con esta Release si quieres comprobar la integridad del paquete.
+La edición Apple Shortcuts está documentada en `ios/README.md`. El `.shortcut` público final requiere exportación/validación mediante Apple Atajos antes de poder distribuirse como un Atajo oficial funcional. El repositorio no presenta un archivo generado sin firma como si fuera una build válida de Apple.
+
+### Assets
+
+Assets estables previstos para la Release:
+
+```text
+Portable-File-Organizer-Windows-v1.0.0.zip
+Portable-File-Organizer-Linux-v1.0.0.tar.gz
+SHA256SUMS.txt
+```
+
+El Shortcut de iOS podrá añadirse a esta misma Release después de su validación/exportación por Apple:
+
+```text
+Portable-File-Organizer-iOS-v1.0.0.shortcut
+```
 
 ---
 
-Public Semantic Versioning starts with this Release at **v1.0.0**. Earlier numbers were internal development identifiers only.
-
-El Versionado Semántico público comienza con esta Release en **v1.0.0**. Las numeraciones anteriores fueron únicamente identificadores internos de desarrollo.
+Public Semantic Versioning starts at **v1.0.0**.  
+El Versionado Semántico público comienza en **v1.0.0**.
