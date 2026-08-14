@@ -1,6 +1,6 @@
 # Security Policy / Política de Seguridad
 
-> Official source / Fuente oficial: `https://github.com/zaper3/Portable-File-Organizer`
+> Official source / Fuente oficial: `https://github.com/zaper3/Portable-File-Organizer-Windows`
 
 ---
 
